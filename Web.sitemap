@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="strona_glowna.aspx" title="strona główna"  description="">
+    <siteMapNode url="wykaz_projektow.aspx" title="wykaz projektów"  description="" >
+        <siteMapNode url="dodaj_rodzaj.aspx" title="dodaj rodzaj projektu"  description="" />
+		<siteMapNode url="dodaj_status.aspx" title="dodaj status projektu"  description="" />
+		<siteMapNode url="edytuj_rodzaj.aspx" title="edytuj rodzaj projektu"  description="" />
+		<siteMapNode url="edytuj_status.aspx" title="edytuj status projektu"  description="" />
+		<siteMapNode url="dodaj_projekt.aspx" title="dodaj projekt"  description="" />
+		<siteMapNode url="projekty_wg_rodzaj.aspx" title="projekty wg. rodzaju"  description="" />
+		<siteMapNode url="projekty_wg_status.aspx" title="projekty wg. statusu"  description="" />
+		<siteMapNode url="edytuj_projekt.aspx" title="edycja projektu"  description="" />
+	</siteMapNode>
+  </siteMapNode>
+</siteMap>
