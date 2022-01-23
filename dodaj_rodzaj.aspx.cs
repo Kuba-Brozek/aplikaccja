@@ -11,13 +11,23 @@ namespace aplikaccja
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.Insert();
-            Response.Redirect("dodaj_rodzaj.aspx");
+            try
+            {
+                SqlDataSource1.Insert();
+                Response.Redirect("dodaj_rodzaj.aspx");
+            }
+            catch(System.Data.SqlClient.SqlException)
+            {
+                Label1.Visible = true;
+                Label1.Text = "Rodzaj projektu: " + TextBox1.Text + " został już dodany!!!";
+                Response.Write("Rodzaj projektu: " + TextBox1.Text + " został już dodany!!!");
+            }
+            
         }
     }
 }

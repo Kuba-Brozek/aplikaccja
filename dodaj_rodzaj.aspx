@@ -19,6 +19,11 @@
     </p>
     <p>
         rodzaj projektu:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="nie wprowadzono nazwy rodzaju projektu!!!" ForeColor="#FF3300">*</asp:RequiredFieldValidator>
+    </p>
+    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#FF3300" Width="1227px" />
+    <p>
+        <asp:Label ID="Label1" runat="server" ForeColor="#FF3300" Text="Label"></asp:Label>
     </p>
     <p>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="zapisz" />
